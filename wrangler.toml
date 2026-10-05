@@ -1,0 +1,16 @@
+name = "godjo-mail"
+main = "src/index.js"
+compatibility_date = "2024-09-23"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "godjo-mail"
+database_id = "ВСТАВЬТЕ_ID_ИЗ_wrangler_d1_create"
+
+[vars]
+ADMIN_USER = "admin"
+# FORWARD_TO = "you@gmail.com"   # необязательно: копия писем на личный ящик
+
+# Секреты (не храните в репозитории!):
+#   npx wrangler secret put ADMIN_PASSWORD
+#   npx wrangler secret put SMS_TOKEN
